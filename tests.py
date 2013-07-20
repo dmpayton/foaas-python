@@ -2,7 +2,7 @@ import unittest
 from foaas import Fuck
 
 
-class FOAASTests(unittest.TestCase):
+class FuckingTests(unittest.TestCase):
     def setUp(self):
         self.fuck = Fuck()
 
