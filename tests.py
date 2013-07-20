@@ -33,7 +33,7 @@ class FOAASTests(unittest.TestCase):
 
     def test_text(self):
         text = self.fuck.thanks(from_='Bob').text
-        self.assertEqual('Fuck you very much. - - Bob', text)
+        self.assertEqual('Fuck you very much. - Bob', text)
 
     def test_random(self):
         self.fuck.random(from_='Chris')
