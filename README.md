@@ -29,7 +29,7 @@ Fuck off:
 ```
 >>> from foaas import fuck
 >>> print fuck.off(name='Tom', from_='Chris').text
-Fuck off, Tom. - - Chris
+Fuck off, Tom. - Chris
 ```
 
 Give me some fucking JSON:
@@ -55,7 +55,7 @@ This needs to be fucking secure:
 >>> print fucking.url
 https://foaas.herokuapp.com/life/Phil
 >>> print fucking.text
-Fuck my life. - - Phil
+Fuck my life. - Phil
 ```
 
 Give me some random fucking things:
