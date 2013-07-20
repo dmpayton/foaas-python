@@ -12,13 +12,11 @@ Documentation
 
 ### Installation
 
-Use [pip]:
+This package relies on [requests] and should be installed with [pip]:
 
 ```
 pip install foaas
 ```
-
-
 
 ### Basic Usage
 
@@ -26,8 +24,8 @@ Fuck off:
 
 ```
 >>> from foaas import fuck
->>> print fuck.you(name='Tom', from_='Chris').text
-Fuck you, Tom. - - Chris
+>>> print fuck.off(name='Tom', from_='Chris').text
+Fuck off, Tom. - - Chris
 ```
 
 Give me some fucking JSON:
@@ -94,4 +92,5 @@ OK
 [FOAAS]: http://foaas.com/
 [Derek Payton]: http://dmpayton.com
 [MIT]: https://github.com/dmpayton/foaas-python/blob/master/LICENSE
+[requests]: http://python-requests.org/
 [pip]: http://www.pip-installer.org/
