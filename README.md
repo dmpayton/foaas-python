@@ -58,6 +58,19 @@ https://foaas.herokuapp.com/life/Phil
 Fuck my life. - - Phil
 ```
 
+Give me some random fucking things:
+
+```
+>>> print fuck.random(from_='Chris').text
+Fuck you very much. - Chris
+>>> print fuck.random(from_='Chris').text
+Fuck my life. - Chris
+>>> print fuck.random(name='Tom', from_='Chris').text
+Fuck me gently with a chainsaw, Tom. Do I look like Mother Teresa? - Chris
+>>> print fuck.random(name='Tom', from_='Chris').text
+Fuck off, Tom. - Chris
+```
+
 ### Supported Actions
 
  * `fuck.life(from_)`
@@ -74,11 +87,12 @@ Fuck my life. - - Phil
  * `fuck.everything(from_)`
  * `fuck.shakespeare(name, from_)`
  * `fuck.you(name, from_)`
+ * `fuck.random(name, from_)`
 
 ### tl;dr
 
 ```
-foaas.Fuck([secure=True]).<action>(name='<name>'[, from_='<from>').[url|html|text|json]
+foaas.Fuck([secure=True]).<action>(name='<name>', from_='<from>').[url|html|text|json]
 ```
 
 Testing
