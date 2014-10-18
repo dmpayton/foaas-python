@@ -5,7 +5,7 @@ from optparse import OptionParser
 
 __AUTHOR__ = 'Derek Payton <derek.payton@gmail.com>'
 __LICENSE__ = 'MIT'
-__VERSION__ = '0.0.1'
+__VERSION__ = '0.0.2'
 
 
 class FuckingResponse(object):
@@ -110,6 +110,6 @@ if __name__ == '__main__':
 
     fucking = getattr(fuck, action)(**options)
     if url_only:
-        print fucking.url
+        print(fucking.url)
     else:
-        print fucking.text
+        print(fucking.text)
