@@ -45,20 +45,20 @@ class FuckingResponse(object):
 
 class Fuck(object):
     actions = {
-        'off': 'off/{name}/{from}',
-        'you': 'you/{name}/{from}',
-        'this': 'this/{from}',
-        'that': 'that/{from}',
-        'everything': 'everything/{from}',
-        'everyone': 'everyone/{from}',
-        'donut': 'donut/{name}/{from}',
-        'shakespeare': 'shakespeare/{name}/{from}',
-        'linus': 'linus/{name}/{from}',
-        'king': 'king/{name}/{from}',
-        'pink': 'pink/{from}',
-        'life': 'life/{from}',
         'chainsaw': 'chainsaw/{name}/{from}',
+        'donut': 'donut/{name}/{from}',
+        'everyone': 'everyone/{from}',
+        'everything': 'everything/{from}',
+        'king': 'king/{name}/{from}',
+        'life': 'life/{from}',
+        'linus': 'linus/{name}/{from}',
+        'off': 'off/{name}/{from}',
+        'pink': 'pink/{from}',
         'thanks': 'thanks/{from}',
+        'that': 'that/{from}',
+        'this': 'this/{from}',
+        'shakespeare': 'shakespeare/{name}/{from}',
+        'you': 'you/{name}/{from}',
     }
 
     def __init__(self, secure=False, language=None):
