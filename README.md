@@ -73,21 +73,21 @@ Fuck off, Tom. - Chris
 
 ### Supported Actions
 
- * `fuck.life(from_)`
- * `fuck.everyone(from_)`
- * `fuck.that(from_)`
  * `fuck.chainsaw(name, from_)`
- * `fuck.thanks(from_)`
- * `fuck.linus(name, from_)`
- * `fuck.pink(from_)`
- * `fuck.king(name, from_)`
- * `fuck.off(name, from_)`
  * `fuck.donut(name, from_)`
- * `fuck.this(from_)`
+ * `fuck.everyone(from_)`
  * `fuck.everything(from_)`
+ * `fuck.king(name, from_)`
+ * `fuck.life(from_)`
+ * `fuck.linus(name, from_)`
+ * `fuck.off(name, from_)`
+ * `fuck.pink(from_)`
+ * `fuck.thanks(from_)`
+ * `fuck.that(from_)`
+ * `fuck.this(from_)`
+ * `fuck.random(name, from_)`
  * `fuck.shakespeare(name, from_)`
  * `fuck.you(name, from_)`
- * `fuck.random(name, from_)`
 
 ### tl;dr
 
