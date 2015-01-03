@@ -45,19 +45,36 @@ class FuckingResponse(object):
 
 class Fuck(object):
     actions = {
+        'ballmer': 'ballmer/{name}/{company}/{from}',
+        'because': 'because/{from}',
+        'bus': 'bus/{name}/{from}',
+        'bye': 'bye/{from}',
+        'caniuse': 'caniuse/{name}/{from}',
         'chainsaw': 'chainsaw/{name}/{from}',
+        'cool': 'cool/{from}',
+        'diabetes': 'diabetes/{from}',
         'donut': 'donut/{name}/{from}',
         'everyone': 'everyone/{from}',
         'everything': 'everything/{from}',
+        'fascinating': 'fascinating/{from}',
+        'field': 'field/{name}/{from}/{reference}',
+        'flying': 'flying/{from}',
         'king': 'king/{name}/{from}',
         'life': 'life/{from}',
         'linus': 'linus/{name}/{from}',
+        'madison': 'madison/{name}/{from}',
+        'nugget': 'nugget/{name}/{from}',
         'off': 'off/{name}/{from}',
+        'outside': 'outside/{name}/{from}',
         'pink': 'pink/{from}',
         'thanks': 'thanks/{from}',
         'that': 'that/{from}',
+        'thing': '{thing}/{from}',
         'this': 'this/{from}',
         'shakespeare': 'shakespeare/{name}/{from}',
+        'what': 'what/{from}',
+        'xmas': 'xmas/{name}/{from}',
+        'yoda': 'yoda/{name}/{from}',
         'you': 'you/{name}/{from}',
     }
 
@@ -100,6 +117,9 @@ if __name__ == '__main__':
     parser.add_option('-a', '--action', dest='action', help='Name of the action to perform', default='off')
     parser.add_option('-n', '--name', dest='name', help='Who do you want to fuck off?')
     parser.add_option('-f', '--from', dest='from', help='Who are you?')
+    parser.add_option('-c', '--company', dest='company', help='Which company do you want to fuck off?')
+    parser.add_option('-t', '--thing', dest='thing', help='What thing do you want to fuck off?')
+    parser.add_option('-r', '--reference', dest='reference', help='Who do you want to reference?')
     parser.add_option('-u', '--url', action='store_true', dest='url', help='Only display the URL (useful for c/ping)')
 
     (options, args) = parser.parse_args()

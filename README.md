@@ -73,20 +73,37 @@ Fuck off, Tom. - Chris
 
 ### Supported Actions
 
+ * `fuck.ballmer(name, company, from_)`
+ * `fuck.because(from_)`
+ * `fuck.bus(name, from_)`
+ * `fuck.bye(from_)`
+ * `fuck.caniuse(namer, from_)`
  * `fuck.chainsaw(name, from_)`
+ * `fuck.cool(from_)`
+ * `fuck.diabetes(from_)`
  * `fuck.donut(name, from_)`
  * `fuck.everyone(from_)`
  * `fuck.everything(from_)`
+ * `fuck.fascinating(from_)`
+ * `fuck.field(name, from_, reference)`
+ * `fuck.flying(from_)`
  * `fuck.king(name, from_)`
  * `fuck.life(from_)`
  * `fuck.linus(name, from_)`
+ * `fuck.madison(name, from_)`
+ * `fuck.nugget(name, from_)`
  * `fuck.off(name, from_)`
+ * `fuck.outside(name, from_)`
  * `fuck.pink(from_)`
  * `fuck.thanks(from_)`
  * `fuck.that(from_)`
+ * `fuck.thing(thing, from_)`
  * `fuck.this(from_)`
  * `fuck.random(name, from_)`
  * `fuck.shakespeare(name, from_)`
+ * `fuck.what(from_)`
+ * `fuck.xmas(name, from_)`
+ * `fuck.yoda(name, from_)`
  * `fuck.you(name, from_)`
 
 ### tl;dr
