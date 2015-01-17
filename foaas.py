@@ -45,6 +45,7 @@ class FuckingResponse(object):
 
 class Fuck(object):
     actions = {
+        'awesome': 'awesome/{from}',
         'ballmer': 'ballmer/{name}/{company}/{from}',
         'because': 'because/{from}',
         'bus': 'bus/{name}/{from}',
