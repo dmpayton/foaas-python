@@ -45,6 +45,7 @@ class FuckingResponse(object):
 
 class Fuck(object):
     actions = {
+        'awesome': 'awesome/{from}',
         'ballmer': 'ballmer/{name}/{company}/{from}',
         'because': 'because/{from}',
         'bus': 'bus/{name}/{from}',
@@ -96,10 +97,19 @@ class Fuck(object):
         return outer(self.actions[attr])
 
     def random(self, **kwargs):
-        actions = self.actions.keys()
-        if 'name' not in kwargs:
-            actions = [key for key in actions if '{name}' not in self.actions[key]]
-        return getattr(self, random.choice(actions))(**kwargs)
+        applicable_actions = []
+        for action in self.actions.keys():
+            uri = self.actions[action]
+            if uri.count('{') != len(kwargs):
+                continue
+            for param in kwargs:
+                if '{{{0}}}'.format(param.rstrip('_')) not in uri:
+                    break
+            else:
+                applicable_actions.append(action)
+
+        choice = getattr(self, random.choice(applicable_actions))
+        return choice(**kwargs)
 
     def build_url(self, path, **kwargs):
         # use from_ since from is a keyword. *grumble*

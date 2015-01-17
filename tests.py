@@ -38,6 +38,8 @@ class FuckingTests(unittest.TestCase):
     def test_random(self):
         self.fuck.random(from_='Chris')
         self.fuck.random(name='Tom', from_='Chris')
+        self.fuck.random(name='Alice', from_='Bob', company='Acme')
+        self.fuck.random(name='Alice', from_='Bob', reference='Clara')
 
 
 if __name__ == '__main__':

@@ -73,6 +73,7 @@ Fuck off, Tom. - Chris
 
 ### Supported Actions
 
+ * `fuck.awesome(from_)`
  * `fuck.ballmer(name, company, from_)`
  * `fuck.because(from_)`
  * `fuck.bus(name, from_)`
