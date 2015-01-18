@@ -3,9 +3,9 @@ foaas-python
 
 A simple Python library to [FOAAS].
 
-[![Build Status](https://secure.travis-ci.org/dmpayton/foaas-python.png)](http://travis-ci.org/dmpayton/foaas-python)
-[![Downloads](https://pypip.in/d/foaas/badge.png)](https://crate.io/packages/foaas/)
-
+[![build status](https://secure.travis-ci.org/dmpayton/foaas-python.png)](http://travis-ci.org/dmpayton/foaas-python)
+[![test coverage](https://coveralls.io/repos/dmpayton/foaas-python/badge.png)](https://coveralls.io/r/dmpayton/foaas-python)
+[![downloads](https://pypip.in/d/foaas/badge.png)](https://crate.io/packages/foaas/)
 
 * **Author**: [Derek Payton]
 * **Version**: 0.0.1
