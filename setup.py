@@ -6,7 +6,7 @@ except ImportError:
 
 setup(
     name='foaas',
-    version='0.0.2',
+    version='0.2.0',
     description='Fuck Off As A Service',
     license='MIT',
     url='https://github.com/dmpayton/foaas-python',

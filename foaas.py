@@ -9,7 +9,7 @@ except ImportError:
 
 __AUTHOR__ = 'Derek Payton <derek.payton@gmail.com>'
 __LICENSE__ = 'MIT'
-__VERSION__ = '0.0.2'
+__VERSION__ = '0.2.0'
 
 
 class FuckingResponse(object):

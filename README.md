@@ -8,7 +8,7 @@ A simple Python library to [FOAAS].
 [![downloads](https://pypip.in/d/foaas/badge.png)](https://crate.io/packages/foaas/)
 
 * **Author**: [Derek Payton]
-* **Version**: 0.0.1
+* **Version**: 0.2.0
 * **License**: [MIT]
 
 Documentation
