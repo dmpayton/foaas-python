@@ -1,7 +1,11 @@
 import random
 import requests
-import urllib
 from optparse import OptionParser
+
+try:
+    from urllib import quote
+except ImportError:
+    from urllib.parse import quote
 
 __AUTHOR__ = 'Derek Payton <derek.payton@gmail.com>'
 __LICENSE__ = 'MIT'
@@ -22,7 +26,7 @@ class FuckingResponse(object):
         return requests.get(self.url, headers={
             'Accept': accept,
             'Accept-Language': self.language or 'en-us'
-            })
+        })
 
     @property
     def text(self):
@@ -113,7 +117,8 @@ class Fuck(object):
 
     def build_url(self, path, **kwargs):
         # use from_ since from is a keyword. *grumble*
-        params = dict([(k.rstrip('_'), urllib.quote(v)) for k, v in kwargs.items() if v])
+        params = dict([(k.rstrip('_'), quote(v)) for k, v
+            in kwargs.items() if v])
         url = '{protocol}://foaas.herokuapp.com/{path}'.format(
             protocol='https' if self.secure else 'http',
             path=path.format(**params))
@@ -124,13 +129,26 @@ fuck = Fuck()
 
 if __name__ == '__main__':
     parser = OptionParser()
-    parser.add_option('-a', '--action', dest='action', help='Name of the action to perform', default='off')
-    parser.add_option('-n', '--name', dest='name', help='Who do you want to fuck off?')
+
+    parser.add_option('-a', '--action', dest='action', default='off',
+        help='Name of the action to perform')
+
+    parser.add_option('-n', '--name', dest='name',
+        help='Who do you want to fuck off?')
+
     parser.add_option('-f', '--from', dest='from', help='Who are you?')
-    parser.add_option('-c', '--company', dest='company', help='Which company do you want to fuck off?')
-    parser.add_option('-t', '--thing', dest='thing', help='What thing do you want to fuck off?')
-    parser.add_option('-r', '--reference', dest='reference', help='Who do you want to reference?')
-    parser.add_option('-u', '--url', action='store_true', dest='url', help='Only display the URL (useful for c/ping)')
+
+    parser.add_option('-c', '--company', dest='company',
+        help='Which company do you want to fuck off?')
+
+    parser.add_option('-t', '--thing', dest='thing',
+        help='What thing do you want to fuck off?')
+
+    parser.add_option('-r', '--reference', dest='reference',
+        help='Who do you want to reference?')
+
+    parser.add_option('-u', '--url', action='store_true', dest='url',
+        help='Only display the URL (useful for c/ping)')
 
     (options, args) = parser.parse_args()
 
