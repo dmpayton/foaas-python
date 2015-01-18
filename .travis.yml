@@ -1,9 +1,6 @@
 language: python
-python:
-  - "2.7"
 
 install:
-  - pip install -q requests
-  - python setup.py -q install
+  - pip install tox
 
-script: python tests.py
+script: tox
