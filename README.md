@@ -110,7 +110,7 @@ Fuck off, Tom. - Chris
 ### tl;dr
 
 ```
-foaas.Fuck([secure=True]).<action>(name='<name>', from_='<from>').[url|html|text|json]
+foaas.Fuck([secure=True]).<action>(**kwargs)[.<url|html|text|json>]
 ```
 
 Testing
@@ -118,11 +118,17 @@ Testing
 
 ```
 $ python tests.py
-......
+.......
 ----------------------------------------------------------------------
-Ran 6 tests in 0.924s
+Ran 7 tests in 0.724s
 
 OK
+```
+
+... or use [tox]:
+
+```
+$ tox
 ```
 
 [FOAAS]: http://foaas.com/
@@ -130,3 +136,4 @@ OK
 [MIT]: https://github.com/dmpayton/foaas-python/blob/master/LICENSE
 [requests]: http://python-requests.org/
 [pip]: http://www.pip-installer.org/
+[tox]: https://tox.readthedocs.org/
